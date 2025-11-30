@@ -1,0 +1,1031 @@
+{{!< default}} {{!-- The tag above means: insert everything in this file into the body of the default.hbs template --}}
+    {{!-- {{#if @member}} <script>
+    // Redirect to archive if logged in
+    window.location = '/archive/';
+    </script>
+
+    {{/if}} --}}
+
+    <div class="bg-stone-950 text-white relative h-[95vh] flex items-center">
+        <div
+            class="max-w-3xl mx-auto my-44 px-4 sm:px-6 text-center flex items-center flex-col relative z-30 bg-gradient-radial from-black to-transparent from-0% to-60%">
+            {{!-- <img src="{{asset '/images/ghost-orb-white-transparent.png'}}" alt="Ghost logo"
+                class="w-[100px] sm:w-[130px] h-auto mb-6 sm:mb-10" /> --}}
+            <div class="flex justify-center items-center mb-5">
+                <video aria-hidden="true" id="logoVideo" autoplay loop muted preload="auto" playsinline
+                    class="pointer-events-none w-[140px] h-[140px] max-w-[140px] sm:w-[240px] sm:h-[200px] sm:max-w-[200px]"></video>
+            </div>
+            <h1 class="font-bold text-4xl md:text-7xl leading-none mb-4 text-balance">It’s time to bring back the open
+                web.</h1>
+            <p class="text-xl sm:text-2xl md:text-3xl max-md:leading-tight mb-14 text-balance">Ghost is federating over
+                ActivityPub to become part of&nbsp;the world’s largest publishing network.</p>
+            <div class="w-full max-w-xl">
+                {{> "email-subscription"}}
+            </div>
+        </div>
+
+        <div class="absolute z-0 top-0 left-0 w-screen h-[95vh] overflow-hidden">
+            <iframe
+                src="https://customer-cubrih08bflu3z2b.cloudflarestream.com/7ae8fddb507c0285f8312adcb112db28/iframe?muted=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-cubrih08bflu3z2b.cloudflarestream.com%2F7ae8fddb507c0285f8312adcb112db28%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false&primaryColor=%23000000"
+                loading="lazy"
+                style="box-sizing: border-box; height: 56.25vw; left: 50%; min-height: 100%; min-width: 100%; transform: translate(-50%, -50%); position: absolute; top: 50%; width: 177.77777778vh;"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"
+                title="bg"></iframe>
+        </div>
+        <div class="w-full h-2/3 absolute -bottom-1 bg-gradient-to-t from-stone-950 to-stone-950/0 z-20"></div>
+        <div class="w-px h-40 sm:h-[16vh] bg-white absolute left-1/2 bottom-0 z-10"></div>
+    </div>
+
+    <div class="bg-stone-950 text-white pt-24">
+        <div class="font-serif font-medium text-lg sm:text-xl px-4 sm:px-6">
+            <div class="max-w-8xl grid grid-cols-12 my-0 mx-auto border-b border-b-white/15 pb-16 lg:pb-28">
+                <div
+                    class="lg:columns-3 *:mb-8 gap-10 col-span-12 md:col-span-6 md:col-start-4 lg:col-start-1 lg:col-span-12">
+                    <p
+                        class="first-letter:float-left first-letter:leading-none first-letter:-mb-2 first-letter:pb-0 first-letter:text-6xl sm:first-letter:text-[84px] first-letter:pr-2 sm:first-letter:pr-3 first-letter:font-black first-letter:font-sans-serif first-letter:text-rose-500">
+                        We had it pretty good for a while, back there. The early days of the web were chaotic, free, and
+                        open. Everyone published unique content on their own domain. No two sites looked the same. We
+                        interacted with one another to share ideas.</p>
+                    <p>Then the social networks came. They removed the complexity of running a server. They added simple
+                        social interactions. Follow. Like. Reply. Everything got easier.</p>
+                    <p>But convenience came at a cost, and slowly the way we consumed information became less like home
+                        cooking and more like McDonalds.</p>
+                    <p>This fast food algorithm diet was deliberately designed by technology companies to profit from
+                        our addictions. And after two decades of indulgence, the cracks in our collective consciousness
+                        are visible all around us.</p>
+                    <p>The time has come to take back control, and there are good reasons to be optimistic.</p>
+                    <p>For the past few years the choice has been difficult. Either participate in closed networks at
+                        the mercy of algorithms, or set up an independent website at the expense of your growth. Now,
+                        though, that entire dynamic is getting flipped upside down for the first time.</p>
+                    <p>Email gave us private messaging technology that isn’t owned by a single company. You can
+                        communicate with anyone, whether you use Gmail or Outlook.</p>
+                    <p>ActivityPub is doing the same for social technology. It’s a protocol that allows people across
+                        different platforms to follow, like and reply to one another. No algorithms. No lock-in. No
+                        bullshit.</p>
+                    <p>The open web is coming back, and with it returns diversity. You can both publish independently
+                        <em>and</em> grow faster than ever before with followers from all over the world & the web.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-lg sm:text-xl px-4 sm:px-6">
+            <div class="max-w-8xl mt-36 mx-auto grid grid-cols-12 gap-[8vmin]">
+                <div class="order-2 md:order-1 col-span-12 md:col-span-6 lg:col-span-4 *:mb-8 font-serif font-medium">
+                    <p>Closed networks are in a heated zero-sum competition for users, so your reach is limited to
+                        people on the same platform.</p>
+                    <p>Email, the web’s original open protocol, is used by more people than any platform or social
+                        network that has been invented before or since; because it <em>shares</em> users rather than
+                        competing for them.</p>
+                    <p>The ActivityPub network works the same way: You get access to an audience of every person across
+                        any platform. Open networks grow larger because they don't depend on the success of any one
+                        company.</p>
+                </div>
+                <div
+                    class="order-1 md:order-2 col-span-12 md:col-span-6 lg:col-span-8 font-sans-serif font-bold -mt-14">
+                    <h2 class="text-2xl md:text-3xl mb-6">Platforms by number of users</h2>
+                    <div class="*:mb-5 text-base sm:text-xl leading-none">
+                        <div
+                            class="flex justify-between items-center h-14 rounded-r-full w-full bg-beige text-black px-4">
+                            <div class="flex gap-2 items-center">
+                                <span class="shrink-0">{{> "icons/email" class="w-6 h-6" }}</span>
+                                <span>Email</span>
+                            </div>
+                            <span>4.4b</span>
+                        </div>
+                        <div
+                            class="flex justify-between items-center h-14 rounded-r-full w-[68%] bg-[#3B5998] text-white px-4">
+                            <div class="flex gap-1 items-center">
+                                <span class="shrink-0">{{> "icons/fb" class="w-7 h-7" }}</span>
+                                <span class="max-sm:hidden">Facebook</span>
+                            </div>
+                            <span>3b</span>
+                        </div>
+                        <div
+                            class="flex justify-between items-center h-14 rounded-r-full w-[45%] bg-gradient-to-r from-[#933AB4] to-[#FCAF45] text-white px-4">
+                            <div class="flex gap-3 items-center">
+                                <span class="shrink-0">{{> "icons/ig" class="w-5 h-5" }}</span>
+                                <span class="hidden sm:inline md:hidden lg:inline">Instagram</span>
+                            </div>
+                            <span>2b</span>
+                        </div>
+                        <div
+                            class="flex justify-between gap-2 items-center h-14 rounded-r-full w-fit sm:w-[22%] md:w-fit lg:w-[22%] bg-[#EE1D52] text-white px-4">
+                            <div class="flex gap-2 items-center">
+                                <span class="shrink-0">{{> "icons/tktk" class="w-5 h-5" }}</span>
+                                <span class="max-xl:hidden">TikTok</span>
+                            </div>
+                            <span>1b</span>
+                        </div>
+                        <div class="flex items-center text-white">
+                            <div
+                                class="flex justify-between items-center h-14 rounded-r-full w-auto lg:w-[7%] bg-[#1E1E1E] px-4">
+                                <span>𝕏</span>
+                            </div>
+                            <span class="ml-5 font-medium">300m</span>
+                        </div>
+                        <div class="flex items-center text-white">
+                            <div
+                                class="flex justify-between items-center h-14 rounded-r-full w-[2px] bg-[#FF6719] px-0.5">
+                            </div>
+                            <span class="ml-5 font-medium">30m</span>
+                            <span class="ml-5 font-medium text-lg">(Substack)</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <figure class="relative px-4 sm:px-6 py-40 md:py-60">
+            <div class="node-map"></div>
+            <blockquote class="relative max-w-4xl mx-auto my-0 text-center"
+                cite="https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network">
+                <p class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-8 md:mb-12">“The
+                    fundamental shift, from platforms to protocols, appears to have <span
+                        class="text-rose-500">momentum</span> in a way it never has before.”</p>
+            </blockquote>
+            <figcaption>
+                <a class="font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl text-teal-300 no-underline hover:opacity-100 hoverswoosh whitespace-nowrap"
+                    href="https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network"
+                    target="_blank" rel="noopener noreferrer">David Pierce <span class="text-white">//</span> <cite
+                        class="not-italic">The Verge <span class="text-white">&rarr;</span></cite></a>
+            </figcaption>
+        </figure>
+    </div>
+
+    {{!-- <div class="w-full bg-stone-950">
+        <div class="flex flex-col items-center">
+            <div class="h-[1px] w-[14%] bg-beige mb-[32px] opacity-30"></div>
+            <div class="h-[1.5px] w-[18%] bg-beige mb-[31px] opacity-40"></div>
+            <div class="h-[3px] w-[34%] bg-beige mb-[30px] opacity-50"></div>
+            <div class="h-[4px] w-[44%] bg-beige mb-[29px] opacity-60"></div>
+            <div class="h-[5px] w-[54%] bg-beige mb-[28px] opacity-80"></div>
+            <div class="h-[6px] w-[64%] bg-beige mb-[27px]"></div>
+            <div class="h-[7px] w-[74%] bg-beige mb-[26px]"></div>
+            <div class="h-[8px] w-[84%] bg-beige mb-[25px]"></div>
+            <div class="h-[9px] w-[94%] bg-beige mb-[24px]"></div>
+            <div class="h-[10px] w-full bg-beige mb-[23px]"></div>
+            <div class="h-[11px] w-full bg-beige mb-[22px]"></div>
+            <div class="h-[12px] w-full bg-beige mb-[21px]"></div>
+            <div class="h-[13px] w-full bg-beige mb-[20px]"></div>
+            <div class="h-[14px] w-full bg-beige mb-[19px]"></div>
+            <div class="h-[15px] w-full bg-beige mb-[18px]"></div>
+            <div class="h-[16px] w-full bg-beige mb-[17px]"></div>
+            <div class="h-[17px] w-full bg-beige mb-[16px]"></div>
+            <div class="h-[18px] w-full bg-beige mb-[15px]"></div>
+            <div class="h-[19px] w-full bg-beige mb-[14px]"></div>
+            <div class="h-[20px] w-full bg-beige mb-[13px]"></div>
+            <div class="h-[21px] w-full bg-beige mb-[12px]"></div>
+            <div class="h-[22px] w-full bg-beige mb-[11px]"></div>
+            <div class="h-[23px] w-full bg-beige mb-[10px]"></div>
+            <div class="h-[24px] w-full bg-beige mb-[9px]"></div>
+            <div class="h-[25px] w-full bg-beige mb-[8px]"></div>
+            <div class="h-[26px] w-full bg-beige mb-[7px]"></div>
+            <div class="h-[27px] w-full bg-beige mb-[6px]"></div>
+            <div class="h-[28px] w-full bg-beige mb-[5px]"></div>
+            <div class="h-[29px] w-full bg-beige mb-[4px]"></div>
+            <div class="h-[30px] w-full bg-beige mb-[3px]"></div>
+            <div class="h-[31px] w-full bg-beige mb-[2px]"></div>
+            <div class="h-[32px] w-full bg-beige mb-px"></div>
+        </div>
+    </div> --}}
+
+    <div class="w-full md:-mt-10 bg-stone-950">
+        <div class="flex flex-col items-center">
+            <div class="h-[1px] w-[10%] bg-white mb-[30px] opacity-30"></div>
+            <div class="h-[1.5px] w-[24%] bg-white mb-[29px] opacity-40"></div>
+            <div class="h-[3px] w-[34%] bg-white mb-[28px] opacity-50"></div>
+            <div class="h-[4px] w-[44%] bg-beige mb-[27px] opacity-60"></div>
+            <div class="h-[5px] w-[54%] bg-beige mb-[26px] opacity-80"></div>
+            <div class="h-[6px] w-[64%] bg-beige mb-[25px]"></div>
+            <div class="h-[7px] w-[74%] bg-beige mb-[24px]"></div>
+            <div class="h-[8px] w-[84%] bg-beige mb-[23px]"></div>
+            <div class="h-[9px] w-[94%] bg-beige mb-[22px]"></div>
+            <div class="h-[10px] w-full bg-beige mb-[21px]"></div>
+            <div class="h-[11px] w-full bg-beige mb-[20px]"></div>
+            <div class="h-[12px] w-full bg-beige mb-[19px]"></div>
+            <div class="h-[13px] w-full bg-beige mb-[18px]"></div>
+            <div class="h-[14px] w-full bg-beige mb-[17px]"></div>
+            <div class="h-[15px] w-full bg-beige mb-[16px]"></div>
+            <div class="h-[16px] w-full bg-beige mb-[15px]"></div>
+            <div class="h-[17px] w-full bg-beige mb-[14px]"></div>
+            <div class="h-[18px] w-full bg-beige mb-[13px]"></div>
+            <div class="h-[19px] w-full bg-beige mb-[12px]"></div>
+            <div class="h-[20px] w-full bg-beige mb-[11px]"></div>
+            <div class="h-[21px] w-full bg-beige mb-[10px]"></div>
+            <div class="h-[22px] w-full bg-beige mb-[9px]"></div>
+            <div class="h-[23px] w-full bg-beige mb-[8px]"></div>
+            <div class="h-[24px] w-full bg-beige mb-[7px]"></div>
+            <div class="h-[25px] w-full bg-beige mb-[6px]"></div>
+            <div class="h-[26px] w-full bg-beige mb-[5px]"></div>
+            <div class="h-[27px] w-full bg-beige mb-[4px]"></div>
+            <div class="h-[28px] w-full bg-beige mb-[3px]"></div>
+            <div class="h-[29px] w-full bg-beige mb-[2px]"></div>
+            <div class="h-[30px] w-full bg-beige mb-[1px]"></div>
+        </div>
+    </div>
+
+    <div class="pt-44 networkbg bg-beige text-stone-950">
+        <div class="mt-32 max-w-8xl mx-auto grid grid-cols-12 gap-[8vmin] px-4 sm:px-6">
+            <div class="col-span-12 md:col-span-6 md:col-start-4 xl:col-span-4 xl:col-start-5">
+                <h2 class="font-bold text-2xl md:text-3xl leading-tight mb-3">So, what are we going to do with all this
+                    <span class="text-rose-500">momentum</span>?</h2>
+                <div class="font-serif font-medium text-lg sm:text-xl *:mb-6">
+                    <p>In 2024, <a class="underline hover:opacity-100" href="https://ghost.org" target="_blank"
+                            rel="noopener">Ghost</a> is adopting ActivityPub and connecting with other federated
+                        platforms across the web.</p>
+                    <p>This means that, soon, Ghost publishers will be able to follow, like and interact with one
+                        another in the same way that you would normally do on a social network — but on your own
+                        website.</p>
+                    <p class="mb-0">The difference, of course, is that you’ll also be able to follow, like, and interact
+                        with users on Mastodon, Threads, Flipboard, Buttondown, WriteFreely, Tumblr, WordPress,
+                        PeerTube, Pixelfed... or any other platform that has adopted ActivityPub, too. You don’t need to
+                        limit yourself to following people who happen to use the same platform as you.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative overflow-hidden py-[6vmin] sm:py-16 md:py-24 px-4 sm:px-6">
+            <div class="max-w-8xl mx-auto">
+                <div class="grid gap-[8vmin] grid-cols-12 items-center">
+
+                    <div class="col-span-12 lg:col-span-4 order-2 lg:order-1">
+                        <h2 class="font-bold text-xl lg:text-3xl leading-tight mb-2 md:mb-6 text-balance">Follow whoever
+                            you like, wherever they are.</h2>
+                        <div class="font-serif font-medium text-lg sm:text-xl leading-snug text-pretty *:mb-6">
+                            <p>We’re building an ActivityPub feed directly into Ghost to allow you to follow people,
+                                publications and topics from around the web that interest and inspire you.</p>
+                            <p>You can already subscribe to Ghost sites using email or RSS, but now you’ll be able to
+                                subscribe using ActivityPub and have fresh content from all your favorite places
+                                delivered to a single, unified place. The same place you already go when you want to
+                                publish yourself.</p>
+                            <p class="mb-0">When you do publish, your posts will appear in other people’s feeds in
+                                Ghost... and in Mastodon, and everywhere else.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-12 lg:col-span-8 order-1 lg:order-2 lg:py-8">
+                        <div class="lg:w-screen h-auto">
+                            <div class="max-w-7xl overflow-hidden shadow-light rounded-[6px]">
+                                <picture>
+                                    <source media="(max-width: 599px)"
+                                        srcset="{{asset '/images/ghost-activity-pub-01-500.webp' }}" />
+                                    <source media="(min-width: 600px) AND (max-width: 1099px)"
+                                        srcset="{{asset '/images/ghost-activity-pub-01-1000.webp' }}" />
+                                    <source media="(min-width: 1100px)"
+                                        srcset="{{asset '/images/ghost-activity-pub-01.webp' }}" />
+                                    <img src="{{asset '/images/ghost-activity-pub-01.webp' }}"
+                                        alt="An example user interface showing an ActivityPub inbox feed in Ghost"
+                                        loading="lazy" class="w-full lg:w-auto" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative overflow-hidden py-[6vmin] sm:py-16 md:py-24 px-4 sm:px-6">
+            <div class="max-w-8xl mx-auto">
+                <div class="grid gap-[8vmin] grid-cols-12 items-center">
+
+                    <div class="w-full lg:w-auto col-span-12 lg:col-span-8 justify-self-end lg:py-8">
+                        <div class="lg:w-screen h-auto flex justify-end">
+                            <div
+                                class="w-full lg:w-auto max-w-full lg:max-w-7xl overflow-hidden shadow-light rounded-[6px]">
+                                <picture>
+                                    <source media="(max-width: 599px)"
+                                        srcset="{{asset '/images/ghost-activity-pub-02-500b.webp' }}" />
+                                    <source media="(min-width: 600px) AND (max-width: 1099px)"
+                                        srcset="{{asset '/images/ghost-activity-pub-02-1000b.webp' }}" />
+                                    <source media="(min-width: 1100px)"
+                                        srcset="{{asset '/images/ghost-activity-pub-02b.webp' }}" />
+                                    <img src="{{asset '/images/ghost-activity-pub-02b.webp' }}"
+                                        alt="An example user interface showing an ActivityPub article reader in Ghost"
+                                        loading="lazy" class="w-full lg:w-auto" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-12 lg:col-span-4">
+                        <h2 class="font-bold text-xl lg:text-3xl leading-tight mb-2 md:mb-6">Enjoy a simple, relaxed
+                            reading experience.</h2>
+                        <div class="font-serif font-medium text-lg sm:text-xl leading-snug text-pretty *:mb-6">
+                            <p>Long-form content deserves a dedicated design so you can read in peace, much like the way
+                                email newsletters show up in your inbox.</p>
+                            <p>The great thing about ActivityPub is that each platform can design its own experience
+                                around how to present content, whilst still remaining compatible with everything else.
+                            </p>
+                            <p>We’ve spent the past 10 years designing a great writing experience with Ghost. Now, for
+                                the first time, we’re going to work on designing a great reading experience, too. Which
+                                is cool because it turns out that people who write a lot also tend to read a lot.</p>
+                            <p class="mb-0">Who’d have thought?</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-8xl my-[6vmin] sm:my-16 mx-auto px-4 sm:px-6">
+            <div class="flex flex-col items-center mb-[4vmin] gap-[2vmin]">
+                <img src="{{asset '/images/email-fediverse.webp'}}" alt=""
+                    class="grow-0 shrink-0 w-20 lg:w-32 h-auto" />
+                <h2 class="font-bold text-2xl lg:text-4xl text-balance leading-tight text-center">A universal way for
+                    people to subscribe to your work.</h2>
+            </div>
+
+            <picture>
+                <source class="mx-auto shadow-ok rounded-[6px] mb-8 lg:mb-20" media="(max-width: 599px)"
+                    srcset="{{asset '/images/ghost-activity-pub-03-500.webp' }}" />
+                <source class="mx-auto shadow-ok rounded-[6px] mb-8 lg:mb-20"
+                    media="(min-width: 600px) AND (max-width: 1099px)"
+                    srcset="{{asset '/images/ghost-activity-pub-03-1000.webp' }}" />
+                <source class="mx-auto shadow-ok rounded-[6px] mb-8 lg:mb-20" media="(min-width: 1100px)"
+                    srcset="{{asset '/images/ghost-activity-pub-03.webp' }}" />
+                <img class="mx-auto shadow-ok rounded-[6px] mb-8 lg:mb-20"
+                    src="{{asset '/images/ghost-activity-pub-03.webp' }}"
+                    alt="An example user interface showing a subscription input that supports both ActivityPub and email"
+                    loading="lazy" />
+            </picture>
+
+            <div
+                class="lg:columns-3 font-serif font-medium text-lg sm:text-xl *:mb-6 gap-[40px] leading-snug border-b border-b-beige/30">
+                <p>ActivityPub is a lot like email, and Ghost already supports email subscriptions. This means we can
+                    use the same interface to support both. Your audience enters whatever address they’re used to
+                    subscribing to things with, and Ghost figures out the rest.</p>
+                <p>This allows your readers to choose how they would prefer to subscribe, and your work to reach farther
+                    and wider when you publish.</p>
+                <p>The great thing about this is that ActivityPub subscribers and email subscribers are all just
+                    registered Ghost members.</p>
+                <p>Regardless of the way people sign up, they can sign in, comment, like a post, or adjust the way they
+                    prefer to receive new posts from you. One benefit of ActivityPub over email is that it has a 100%
+                    deliverability rate. No more Outlook quarantine folder nonsense.</p>
+                <p>When people reply or interact with your posts in the broader ActivityPub network, those interactions
+                    will show up on your site, too.</p>
+                <p>And, because this technology is all open, you remain in full control of your subscribers.</p>
+                <p>When you publish a new piece online, your distribution comes from your own website rather than
+                    needing to depend on 3rd parties.</p>
+            </div>
+        </div>
+
+        <div class="max-w-8xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-12 gap-[8vmin] py-[12vmin] xl:py-[20vmin] border-y border-black/20">
+                <div class="col-span-12 md:col-span-8 md:col-start-0">
+                    <h2 class="font-bold text-2xl lg:text-5xl leading-tight mb-6">So how’s all this going to work?</h2>
+                    <div
+                        class="font-serif font-medium text-lg sm:text-xl lg:text-3xl *:mb-8 leading-snug lg:leading-snug mb-12">
+                        <p>Networks tend to work best when they’re shaped by the people who use them. So, rather than
+                            going away and working on things quietly behind closed doors, we’re inviting you to be a
+                            part of the build process, and help answer this question.</p>
+                        <p>What you’re looking at here is our first step: Publishing some initial ideas, and inviting
+                            your feedback. Subscribe below to follow along with the build diary, contribute your ideas,
+                            and get early access to test ActivityPub in Ghost.</p>
+                    </div>
+                    {{> "email-subscription"}}
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-8xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-12 gap-[8vmin] pt-[4vmin] pb-[8vmin]">
+                <blockquote
+                    class="flex flex-col col-span-12 lg:col-span-4 text-lg sm:text-xl leading-snug font-serif font-medium pt-16">
+                    <p
+                        class="mb-8 before:content-['_“'] relative before:absolute before:text-6xl lg:before:text-8xl before:font-serif before:font-normal before:top-[-35px] lg:before:top-[-50px] before:left-0">
+                        Our dream for the fediverse is a world in which you don't have to make a screenshot to share
+                        something from one network into another network. The fediverse is all one big network. It's all
+                        connected.</p>
+                    <footer
+                        class="flex flex-col mt-auto before:content-[''] before:w-20 before:border-b before:border-b-black/20 before:block before:mb-8">
+                        <span>Evan Prodromou</span>
+                        <span class="opacity-40">Co-Author of ActivityPub</span>
+                    </footer>
+                </blockquote>
+                <blockquote
+                    class="flex flex-col col-span-12 lg:col-span-4 text-lg sm:text-xl leading-snug font-serif font-medium pt-16">
+                    <p
+                        class="mb-8 before:content-['_“'] relative before:absolute before:text-6xl lg:before:text-8xl before:font-serif before:font-normal before:top-[-35px] lg:before:top-[-50px] before:left-0">
+                        The whole point of ActivityPub as an open protocol is to turn Twitter/Instagram-like social
+                        networking into something more akin to email: truly open.</p>
+                    <footer
+                        class="flex flex-col mt-auto before:content-[''] before:w-20 before:border-b before:border-b-black/20 before:block before:mb-8">
+                        <span>John Gruber</span>
+                        <span class="opacity-40">Daring Fireball</span>
+                    </footer>
+                </blockquote>
+                <blockquote
+                    class="flex flex-col col-span-12 lg:col-span-4 text-lg sm:text-xl leading-snug font-serif font-medium pt-16">
+                    <p
+                        class="mb-8 before:content-['_“'] relative before:absolute before:text-6xl lg:before:text-8xl before:font-serif before:font-normal before:top-[-35px] lg:before:top-[-50px] before:left-0">
+                        The core idea that social networks could be more like email — in which different platforms flow
+                        into the same two-way feed for consumers, perhaps with all their rich formatting — is gathering
+                        momentum.</p>
+                    <footer
+                        class="flex flex-col mt-auto before:content-[''] before:w-20 before:border-b before:border-b-black/20 before:block before:mb-8">
+                        <span>Ben Smith</span>
+                        <span class="opacity-40">Founder of Semafor</span>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-stone-950">
+        <div class="flex flex-col items-center">
+            <div class="h-[30px] w-full bg-beige mb-[1px]"></div>
+            <div class="h-[29px] w-full bg-beige mb-[2px]"></div>
+            <div class="h-[28px] w-full bg-beige mb-[3px]"></div>
+            <div class="h-[27px] w-full bg-beige mb-[4px]"></div>
+            <div class="h-[26px] w-full bg-beige mb-[5px]"></div>
+            <div class="h-[25px] w-full bg-beige mb-[6px]"></div>
+            <div class="h-[24px] w-full bg-beige mb-[7px]"></div>
+            <div class="h-[23px] w-full bg-beige mb-[8px]"></div>
+            <div class="h-[22px] w-full bg-beige mb-[9px]"></div>
+            <div class="h-[21px] w-full bg-beige mb-[10px]"></div>
+            <div class="h-[20px] w-full bg-beige mb-[11px]"></div>
+            <div class="h-[19px] w-full bg-beige mb-[12px]"></div>
+            <div class="h-[18px] w-full bg-beige mb-[13px]"></div>
+            <div class="h-[17px] w-full bg-beige mb-[14px]"></div>
+            <div class="h-[16px] w-full bg-beige mb-[15px]"></div>
+            <div class="h-[15px] w-full bg-beige mb-[16px]"></div>
+            <div class="h-[14px] w-full bg-beige mb-[17px]"></div>
+            <div class="h-[13px] w-full bg-beige mb-[18px]"></div>
+            <div class="h-[12px] w-full bg-beige mb-[19px]"></div>
+            <div class="h-[11px] w-full bg-beige mb-[20px]"></div>
+            <div class="h-[10px] w-full bg-beige mb-[21px]"></div>
+            <div class="h-[9px] w-[94%] bg-beige mb-[22px]"></div>
+            <div class="h-[8px] w-[84%] bg-beige mb-[23px]"></div>
+            <div class="h-[7px] w-[74%] bg-beige mb-[24px]"></div>
+            <div class="h-[6px] w-[64%] bg-beige mb-[25px]"></div>
+            <div class="h-[5px] w-[54%] bg-beige mb-[26px] opacity-80"></div>
+            <div class="h-[4px] w-[44%] bg-beige mb-[27px] opacity-60"></div>
+            <div class="h-[3px] w-[34%] bg-white mb-[28px] opacity-50"></div>
+            <div class="h-[1.5px] w-[24%] bg-white mb-[29px] opacity-40"></div>
+            <div class="h-[1px] w-[10%] bg-white mb-[30px] opacity-30"></div>
+        </div>
+    </div>
+
+    <div class="relative bg-stone-950 text-white pb-12 px-4 sm:px-6">
+        <div class="ptcl"></div>
+        <div class="relative max-w-8xl my-0 mx-auto grid grid-cols-12">
+            <h2
+                class="mt-32 text-5xl md:text-8xl mb-20 font-bold text-center tracking-widest col-span-12 col-start-1 lg:col-span-6 lg:col-start-4">
+                FAQ</h2>
+
+            <div class="mb-24 col-span-12 col-start-1 lg:col-span-6 lg:col-start-4 text-pretty">
+                <h3 class="font-bold text-xl sm:text-2xl text-rose-500 leading-tight mb-2">Isn’t ActivityPub a
+                    microblogging thing?</h3>
+                <p class="font-serif font-medium text-lg sm:text-xl mb-20">No! <a class="underline hover:opacity-100"
+                        href="https://activitypub.rocks" target="_blank" rel="noopener">ActivityPub</a> is a protocol,
+                    like email. You can use it for whatever you like. <a class="underline hover:opacity-100"
+                        href="https://joinmastodon.org" target="_blank" rel="noopener">Mastodon</a> and <a
+                        class="underline hover:opacity-100" href="https://threads.net" target="_blank"
+                        rel="noopener">Threads</a> are built around short-form content, <a
+                        class="underline hover:opacity-100" href="https://pixelfed.org/" target="_blank"
+                        rel="noopener">Pixelfed</a> is built around images, <a class="underline hover:opacity-100"
+                        href="https://joinpeertube.org" target="_blank" rel="noopener">Peertube</a> is built around
+                    video. <a class="underline hover:opacity-100" href="https://ghost.org" target="_blank"
+                        rel="noopener">Ghost</a> is going to be flexible, but generally focused on long-form, rich
+                    content.</p>
+
+                <h3 class="font-bold text-xl sm:text-2xl text-rose-500 leading-tight mb-2 max-sm:text-balance">Are you
+                    working together with anyone else on this?</h3>
+                <p class="font-serif font-medium text-lg sm:text-xl mb-5">Yes! Our friends at <a
+                        class="underline hover:opacity-100" href="https://buttondown.email/" target="_blank"
+                        rel="noopener">Buttondown</a> are <a class="underline hover:opacity-100"
+                        href="https://github.com/buttondown/roadmap/issues/2267#issuecomment-2004380397" target="_blank"
+                        rel="noopener">also building</a> ActivityPub support right now, and we've received kind offers
+                    of help from teams at Mastodon & the ActivityPub spec authors. If any other platforms want to work
+                    together, drop us an email on <a class="underline hover:opacity-100"
+                        href="mailto:activitypub@ghost.org">activitypub@ghost.org</a>.</p>
+                <p class="font-serif font-medium text-lg sm:text-xl mb-20">If Google, Apple, Samsung and Amazon are all
+                    able to collaborate on <a class="underline hover:opacity-100"
+                        href="https://csa-iot.org/all-solutions/matter/" target="_blank" rel="noopener">Matter</a> to
+                    make their products interoperable with one another, there’s no reason publishing platforms can’t do
+                    the same.</p>
+
+                <h3 class="font-bold text-xl sm:text-2xl text-rose-500 leading-tight mb-2">What about premium content &
+                    paid subscribers?</h3>
+                <p class="font-serif font-medium text-lg sm:text-xl mb-20">We think that should work fine, too. There
+                    are multiple ways of supporting gated access to content in ActivityPub, and we're going to do our
+                    best to create a seamless experience both for publishers and for readers.</p>
+
+                <h3 class="font-bold text-xl sm:text-2xl text-rose-500 leading-tight mb-2">How big is the ActivityPub
+                    network?</h3>
+                <p class="font-serif font-medium text-lg sm:text-xl mb-20">Because it’s decentralised, we don’t have an
+                    exact total. Based on data we have about the largest ActivityPub platforms, particularly
+                    Meta/Threads, it’ll be between 170-200million users by the summer of 2024. Ghost will be adding
+                    tens-of-millions more to that total.</p>
+
+                <h3 class="font-bold text-xl sm:text-2xl text-rose-500 leading-tight mb-2">I don't want this and I'm
+                    very angry about it!</h3>
+                <p class="font-serif font-medium text-lg sm:text-xl mb-20">ActivityPub support will be optional and you
+                    don't have to turn it on if you don't want it. Sorry you're having a bad day, here's a video of <a
+                        class="underline hover:opacity-100" target="_blank" rel="noopener"
+                        href="https://www.threads.net/@reina.panda97/post/C565wWJI_Bx">a really good dog</a> to cheer
+                    you up.</p>
+
+                <h3 class="font-bold text-xl sm:text-2xl text-rose-500 leading-tight mb-2">This sounds great! How do I
+                    get it?</h3>
+                <p class="font-serif font-medium text-lg sm:text-xl mb-5">Sign up below for early access to ActivityPub
+                    support in Ghost! We’ll be sharing everything we’re working on in a dedicated email newsletter.</p>
+                <p class="font-serif font-medium text-lg sm:text-xl">If you’re currently using another platform without
+                    ActivityPub support and you’re curious about trying Ghost and enjoying 0% payment fees, <a
+                        class="underline hover:opacity-100" href="https://ghost.org/concierge" target="_blank"
+                        rel="noopener">we're happy to help migrate you - free of charge</a>.</p>
+
+            </div>
+
+            <div class="col-span-12 col-start-1 lg:col-span-6 lg:col-start-4">
+                {{> "email-subscription"}}
+            </div>
+        </div>
+
+        <footer class="relative mt-32 lg:mt-60 text-xs flex justify-between px-4 sm:px-6 font-mono">
+            <div class="flex flex-col gap-1">
+                <span>Copyright © 2013–2024 <a class="hover:underline opacity-100"
+                        href="https://ghost.org">Ghost</a></span>
+                <span class="opacity-50">Decentralised. Non-profit. Open source.</span>
+            </div>
+            <div class="hidden sm:flex flex-col text-right gap-1 items-end">
+                <span>이 웹사이트는 맛있는 쿠키를 사용합니다</span>
+                <a href="https://ghost.onolan.org" target="_blank" rel="noopener"
+                    class="inline-block opacity-50">LFG-00000002</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="module">
+        $(document).ready(function () {
+            var video = document.getElementById('logoVideo');
+            var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            video.src = isSafari ? '/assets/video/ghost-logo-1-2.mov' : '/assets/video/ghost-logo-256k.webm';
+        });
+    </script>
+    <script type="module">
+        (function () {
+
+            var ParticleNetworkAnimation, PNA;
+            ParticleNetworkAnimation = PNA = function () { };
+
+            PNA.prototype.init = function (element) {
+                this.$el = $(element);
+
+                this.container = element;
+                this.canvas = document.createElement('canvas');
+                this.sizeCanvas();
+                this.container.appendChild(this.canvas);
+                this.ctx = this.canvas.getContext('2d');
+                this.particleNetwork = new ParticleNetwork(this);
+
+                this.bindUiActions();
+
+                return this;
+            };
+
+            PNA.prototype.bindUiActions = function () {
+                $(window).on('resize', function () {
+                    // this.sizeContainer();
+                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                    this.sizeCanvas();
+                    this.particleNetwork.createParticles();
+                }.bind(this));
+            };
+
+            PNA.prototype.sizeCanvas = function () {
+                this.canvas.width = this.container.offsetWidth;
+                this.canvas.height = this.container.offsetHeight;
+            };
+
+            var Particle = function (parent, x, y) {
+                this.network = parent;
+                this.canvas = parent.canvas;
+                this.ctx = parent.ctx;
+                this.particleColor = returnRandomArrayitem(this.network.options.particleColors);
+                this.radius = getLimitedRandom(1.5, 2.5);
+                this.opacity = 0;
+                this.x = x || Math.random() * this.canvas.width;
+                this.y = y || Math.random() * this.canvas.height;
+                this.velocity = {
+                    x: (Math.random() - 0.5) * parent.options.velocity,
+                    y: (Math.random() - 0.5) * parent.options.velocity
+                };
+            };
+
+            Particle.prototype.update = function () {
+                if (this.opacity < 1) {
+                    this.opacity += 0.01;
+                } else {
+                    this.opacity = 1;
+                }
+                // Change dir if outside map
+                if (this.x > this.canvas.width + 100 || this.x < -100) {
+                    this.velocity.x = -this.velocity.x;
+                }
+                if (this.y > this.canvas.height + 100 || this.y < -100) {
+                    this.velocity.y = -this.velocity.y;
+                }
+
+                // Update position
+                this.x += this.velocity.x;
+                this.y += this.velocity.y;
+            };
+
+            Particle.prototype.draw = function () {
+                // Draw particle
+                this.ctx.beginPath();
+                this.ctx.fillStyle = this.particleColor;
+                this.ctx.globalAlpha = this.opacity;
+                this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                this.ctx.fill();
+            };
+
+            var ParticleNetwork = function (parent) {
+                this.options = {
+                    velocity: 0.3, // speed
+                    density: 15000, // density
+                    netLineDistance: 200,
+                    netLineColor: '#929292',
+                    particleColors: ['#aaa'] // ['#6D4E5C', '#aaa', '#FFC458' ]
+                };
+                this.canvas = parent.canvas;
+                this.ctx = parent.ctx;
+
+                this.init();
+            };
+
+            ParticleNetwork.prototype.init = function () {
+                this.createParticles(true);
+                this.animationFrame = requestAnimationFrame(this.update.bind(this));
+                this.bindUiActions();
+            };
+
+            ParticleNetwork.prototype.createParticles = function (isInitial) {
+                var me = this;
+                this.particles = [];
+                var quantity = this.canvas.width * this.canvas.height / this.options.density;
+
+                if (isInitial) {
+                    var counter = 0;
+                    clearInterval(this.createIntervalId);
+                    this.createIntervalId = setInterval(function () {
+                        if (counter < quantity - 1) {
+                            this.particles.push(new Particle(this));
+                        }
+                        else {
+                            clearInterval(me.createIntervalId);
+                        }
+                        counter++;
+                    }.bind(this), 250);
+                }
+                else {
+                    for (var i = 0; i < quantity; i++) {
+                        this.particles.push(new Particle(this));
+                    }
+                }
+            };
+
+            ParticleNetwork.prototype.createInteractionParticle = function () {
+                this.interactionParticle = new Particle(this);
+                this.interactionParticle.velocity = {
+                    x: 0,
+                    y: 0
+                };
+                this.particles.push(this.interactionParticle);
+                return this.interactionParticle;
+            };
+
+            ParticleNetwork.prototype.removeInteractionParticle = function () {
+                var index = this.particles.indexOf(this.interactionParticle);
+                if (index > -1) {
+                    this.interactionParticle = undefined;
+                    this.particles.splice(index, 1);
+                }
+            };
+
+            ParticleNetwork.prototype.update = function () {
+                if (this.canvas) {
+
+                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                    this.ctx.globalAlpha = 1;
+
+                    for (var i = 0; i < this.particles.length; i++) {
+                        for (var j = this.particles.length - 1; j > i; j--) {
+                            var distance, p1 = this.particles[i], p2 = this.particles[j];
+
+                            distance = Math.min(Math.abs(p1.x - p2.x), Math.abs(p1.y - p2.y));
+                            if (distance > this.options.netLineDistance) {
+                                continue;
+                            }
+
+                            distance = Math.sqrt(
+                                Math.pow(p1.x - p2.x, 2) +
+                                Math.pow(p1.y - p2.y, 2)
+                            );
+                            if (distance > this.options.netLineDistance) {
+                                continue;
+                            }
+
+                            this.ctx.beginPath();
+                            this.ctx.strokeStyle = this.options.netLineColor;
+                            this.ctx.globalAlpha = (this.options.netLineDistance - distance) / this.options.netLineDistance * p1.opacity * p2.opacity;
+                            this.ctx.lineWidth = 0.7;
+                            this.ctx.moveTo(p1.x, p1.y);
+                            this.ctx.lineTo(p2.x, p2.y);
+                            this.ctx.stroke();
+                        }
+                    }
+
+                    for (var i = 0; i < this.particles.length; i++) {
+                        this.particles[i].update();
+                        this.particles[i].draw();
+                    }
+
+                    if (this.options.velocity !== 0) {
+                        this.animationFrame = requestAnimationFrame(this.update.bind(this));
+                    }
+
+                }
+                else {
+                    cancelAnimationFrame(this.animationFrame);
+                }
+            };
+
+            ParticleNetwork.prototype.bindUiActions = function () {
+                this.spawnQuantity = 1;
+                this.mouseIsDown = false;
+                this.touchIsMoving = false;
+
+                this.onMouseMove = function (e) {
+                    if (!this.interactionParticle) {
+                        this.createInteractionParticle();
+                    }
+                    this.interactionParticle.x = e.offsetX;
+                    this.interactionParticle.y = e.offsetY;
+                }.bind(this);
+
+                this.onTouchMove = function (e) {
+                    e.preventDefault();
+                    this.touchIsMoving = true;
+                    if (!this.interactionParticle) {
+                        this.createInteractionParticle();
+                    }
+                    this.interactionParticle.x = e.changedTouches[0].clientX;
+                    this.interactionParticle.y = e.changedTouches[0].clientY;
+                }.bind(this);
+
+                this.onMouseDown = function (e) {
+                    this.mouseIsDown = true;
+                    var counter = 0;
+                    var quantity = this.spawnQuantity;
+                    var intervalId = setInterval(function () {
+                        if (this.mouseIsDown) {
+                            if (counter === 1) {
+                                quantity = 1;
+                            }
+                            for (var i = 0; i < quantity; i++) {
+                                if (this.interactionParticle) {
+                                    this.particles.push(new Particle(this, this.interactionParticle.x, this.interactionParticle.y));
+                                }
+                            }
+                        }
+                        else {
+                            clearInterval(intervalId);
+                        }
+                        counter++;
+                    }.bind(this), 50);
+                }.bind(this);
+
+                this.onTouchStart = function (e) {
+                    e.preventDefault();
+                    setTimeout(function () {
+                        if (!this.touchIsMoving) {
+                            for (var i = 0; i < this.spawnQuantity; i++) {
+                                this.particles.push(new Particle(this, e.changedTouches[0].clientX, e.changedTouches[0].clientY));
+                            }
+                        }
+                    }.bind(this), 200);
+                }.bind(this);
+
+                this.onMouseUp = function (e) {
+                    this.mouseIsDown = false;
+                }.bind(this);
+
+                this.onMouseOut = function (e) {
+                    this.removeInteractionParticle();
+                }.bind(this);
+
+                this.onTouchEnd = function (e) {
+                    e.preventDefault();
+                    this.touchIsMoving = false;
+                    this.removeInteractionParticle();
+                }.bind(this);
+
+                this.canvas.addEventListener('mousemove', this.onMouseMove);
+                this.canvas.addEventListener('touchmove', this.onTouchMove);
+                this.canvas.addEventListener('mousedown', this.onMouseDown);
+                this.canvas.addEventListener('touchstart', this.onTouchStart);
+                this.canvas.addEventListener('mouseup', this.onMouseUp);
+                this.canvas.addEventListener('mouseout', this.onMouseOut);
+                this.canvas.addEventListener('touchend', this.onTouchEnd);
+            };
+
+            ParticleNetwork.prototype.unbindUiActions = function () {
+                if (this.canvas) {
+                    this.canvas.removeEventListener('mousemove', this.onMouseMove);
+                    this.canvas.removeEventListener('touchmove', this.onTouchMove);
+                    this.canvas.removeEventListener('mousedown', this.onMouseDown);
+                    this.canvas.removeEventListener('touchstart', this.onTouchStart);
+                    this.canvas.removeEventListener('mouseup', this.onMouseUp);
+                    this.canvas.removeEventListener('mouseout', this.onMouseOut);
+                    this.canvas.removeEventListener('touchend', this.onTouchEnd);
+                }
+            };
+
+            var getLimitedRandom = function (min, max, roundToInteger) {
+                var number = Math.random() * (max - min) + min;
+                if (roundToInteger) {
+                    number = Math.round(number);
+                }
+                return number;
+            };
+
+            var returnRandomArrayitem = function (array) {
+                return array[Math.floor(Math.random() * array.length)];
+            };
+
+            PNA = new ParticleNetworkAnimation(); PNA.init($('.node-map')[0]);
+
+        }());
+
+    </script>
+
+    <script type="module">
+        let max_particles = 800;
+        let particles = [];
+        let frequency = 200;
+        let init_num = max_particles;
+        let max_time = frequency * max_particles;
+        let time_to_recreate = false;
+        const data = createCanvas()
+        let tela = data[0];
+        let canvas = data[1];
+
+        setTimeout(function () {
+            time_to_recreate = true;
+        }.bind(this), max_time)
+
+        popolate(max_particles);
+
+        class FishLarva {
+            constructor(canvas, progress) {
+                const random = Math.random()
+                this.progress = 0;
+                this.canvas = canvas;
+                this.speed = 0.1 + random * 0.1
+
+                this.x = ($(window).width() / 2) + (Math.random() * 200 - Math.random() * 200)
+                this.y = ($(window).height() / 2) + (Math.random() * 200 - Math.random() * 200)
+
+                this.s = 0.8 + Math.random() * 0.6;
+                this.a = 0
+
+                this.w = $(window).width()
+                this.h = $(window).height()
+                this.radius = random * 1.3
+                this.color = "#F43F5E"
+
+                this.variantx1 = Math.random() * 1000
+                this.variantx2 = Math.random() * 1000
+                this.varianty1 = Math.random() * 1000
+                this.varianty2 = Math.random() * 1000
+            }
+
+            render() {
+                this.canvas.beginPath();
+                this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                this.canvas.lineWidth = 0;
+                this.canvas.fillStyle = this.color;
+                this.canvas.fill();
+                this.canvas.closePath();
+            }
+
+            move() {
+                this.x += Math.cos(this.a) * this.s;
+                this.y += Math.sin(this.a) * this.s;
+                this.a += Math.random() * 0.8 - 0.4;
+                if (this.x < 0 || this.x > this.w - this.radius) {
+                    return false
+                }
+
+                if (this.y < 0 || this.y > this.h - this.radius) {
+                    return false
+                }
+                this.render()
+                this.progress++
+                return true
+            }
+        }
+
+
+        class FishLarvaEgg {
+            constructor(canvas, progress) {
+                const random = Math.random()
+                this.progress = 0;
+                this.canvas = canvas;
+                this.speed = 0.1 + random * 0.2
+
+                this.x = ($(window).width() / 2) + (Math.random() * 200 - Math.random() * 200)
+                this.y = ($(window).height() / 2) + (Math.random() * 200 - Math.random() * 200)
+
+                this.s = Math.random() * 1;
+                this.a = 0
+
+                this.w = $(window).width()
+                this.h = $(window).height()
+                this.radius = random * 0.8
+                this.color = random > 0.8 ? "#82a0c4" : "#2E4765"
+
+                this.variantx1 = Math.random() * 100
+                this.variantx2 = Math.random() * 100
+                this.varianty1 = Math.random() * 100
+                this.varianty2 = Math.random() * 100
+            }
+
+            render() {
+                this.canvas.beginPath();
+                this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                this.canvas.lineWidth = 2;
+                this.canvas.fillStyle = this.color;
+                this.canvas.fill();
+                this.canvas.closePath();
+            }
+
+            move() {
+                this.x += Math.cos(this.a) * this.s;
+                this.y += Math.sin(this.a) * this.s;
+                this.a += Math.random() * 0.8 - 0.4;
+
+                if (this.x < 0 || this.x > this.w - this.radius) {
+                    return false
+                }
+
+                if (this.y < 0 || this.y > this.h - this.radius) {
+                    return false
+                }
+                this.render()
+                this.progress++
+                return true
+            }
+        }
+
+        function createCanvas() {
+            let tela = document.createElement('canvas');
+            tela.width = $(window).width();
+            tela.height = $(window).height();
+            $(".ptcl").append(tela);
+            let canvas = tela.getContext('2d');
+            return [tela, canvas]
+        }
+
+        function popolate(num) {
+            for (var i = 0; i < num; i++) {
+                setTimeout(
+                    function (x) {
+                        return function () {
+                            let random = Math.random()
+                            let type = new FishLarva(canvas)
+
+                            if (random > .1 && random < .8) type = new FishLarvaEgg(canvas)
+
+                            particles.push(type)
+                        };
+                    }(i)
+                    , frequency * i);
+            }
+            return particles.length
+        }
+
+        /*
+         * Function to clear layer canvas
+         */
+        function clear() {
+            let grd = canvas.createRadialGradient(tela.width / 2, tela.height / 2, 0, tela.width / 2, tela.height / 2, tela.width);
+            grd.addColorStop(0, "rgba(12, 10, 9, 0.2)");
+            grd.addColorStop(1, "rgba(12, 10, 9, 1)");
+            canvas.fillStyle = grd;
+            canvas.fillRect(0, 0, tela.width, tela.height);
+        }
+
+        function update() {
+            clear();
+            particles = particles.filter(function (p) { return p.move() })
+            if (time_to_recreate) {
+                if (particles.length < init_num) { popolate(1) }
+            }
+            requestAnimationFrame(update.bind(this))
+        }
+        update()
+
+    </script>

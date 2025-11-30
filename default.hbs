@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 {{#is "home"}}
-    <html class="landing bg-stone-950" lang="{{@site.locale}}">
+<html class="landing bg-stone-950" lang="{{@site.locale}}">
 {{else}}
-    <html lang="{{@site.locale}}"></html>
+<html lang="{{@site.locale}}">
 {{/is}}
+
 <head>
 
     {{!-- Basic meta - advanced meta is output with {{ghost_head}} below --}}
@@ -13,22 +14,13 @@
 
     {{!-- Preload main styles and scripts for better performance --}}
     <meta name="theme-color" content="#0C0A09">
-    <link rel="preload" as="style" href="{{asset "built/screen.css"}}">
-    <link rel="preload" as="script" href="{{asset "built/source.js"}}">
+    <link rel="preload" as="style" href="{{asset 'built/screen.css'}}">
+    <link rel="preload" as="script" href="{{asset 'built/source.js'}}">
 
-    {{!-- Theme assets - use the {{asset}} helper to reference styles & scripts, this will take care of caching and cache-busting automatically --}}
-    <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}">
-    {{#is "home"}}
-        <link rel="stylesheet" type="text/css" href="{{asset "built/tw.css"}}">
-    {{/is}}
-
-    {{!-- Custom background color --}}
-    <style>
-        :root {
-            --background-color: {{@custom.site_background_color}}
-        }
-    </style>
-
+    {{!-- Theme assets - use the {{asset}} helper to reference styles & scripts, this will take care of caching and
+    cache-busting automatically --}}
+    <link rel="stylesheet" type="text/css" href="{{asset 'built/screen.css'}}">
+    <link rel="stylesheet" type="text/css" href="{{asset 'built/tw.css'}}">
     <script>
         /* The script for calculating the color contrast has been taken from
         https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
@@ -43,34 +35,39 @@
         document.documentElement.classList.add = `has-${textColor}-text`;
     </script>
 
-    {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings, it should always be the last tag before the closing head tag --}}
+    {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings, it should always
+    be the last tag before the closing head tag --}}
     {{ghost_head}}
 
 </head>
-<body class="{{body_class}} has-{{#match @custom.title_font "Elegant serif"}}serif{{else match @custom.title_font "Consistent mono"}}mono{{else}}sans{{/match}}-title has-{{#match @custom.body_font "Elegant serif"}}serif{{else}}sans{{/match}}-body">
+<body class="{{body_class}} has-{{#match @custom.title_font " Elegant serif"}}serif{{else match
+    @custom.title_font "Consistent mono" }}mono{{else}}sans{{/match}}-title has-{{#match
+    @custom.body_font "Elegant serif" }}serif{{else}}sans{{/match}}-body">
 
-<div class="gh-viewport">
+    <div class="gh-viewport">
 
-    {{^is "home"}}
-    {{> "components/navigation" navigationLayout=@custom.navigation_layout}}
-    {{/is}}
+        {{^is "home"}}
+        {{> "components/navigation" navigationLayout=@custom.navigation_layout}}
+        {{/is}}
 
-    {{{body}}}
+        {{{body}}}
 
-    {{^is "home"}}
+        {{^is "home"}}
         {{> "components/footer"}}
-    {{/is}}
-</div>
+        {{/is}}
+        </div>
 
-{{#is "post, page"}}
+    {{#is "post, page"}}
     {{> "lightbox"}}
-{{/is}}
+    {{/is}}
 
-{{!-- Scripts - handle responsive videos, infinite scroll, and navigation dropdowns --}}
-<script src="{{asset "built/source.js"}}"></script>
+    {{!-- Scripts - handle responsive videos, infinite scroll, and navigation dropdowns --}}
+    <script src="{{asset " built/source.js"}}"></script>
 
-{{!-- Ghost outputs required functional scripts with this tag, it should always be the last thing before the closing body tag --}}
-{{ghost_foot}}
+    {{!-- Ghost outputs required functional scripts with this tag, it should always be the last thing before the closing
+    body tag --}}
+    {{ghost_foot}}
 
 </body>
+
 </html>
